@@ -1,0 +1,57 @@
+.container {
+	background-color: #ccc;
+	height: 200px;
+	display: flex;
+	
+	flex-direction: row;
+	/* direção dos itens, por padrão são em linha*/
+	/* column | row-reverse | column-reverse */
+	
+	flex-wrap: nowrap;
+	/* define se os itens tem quebra de linha ou não, por padrão é nowrap */
+	/* wrap | wrap-reverse */
+	
+	flex-flow: row nowrap;
+	/* forma resumida de escrever o flex-wrap e flex-direction juntos*/
+	
+	justify-content: flex-start;
+	/* alinhamento horizontal, por padrão é o flex-start*/
+	/*space-between | space-around | flex-end | center */
+	
+	align-items: stretch ;
+	/*alinhamento vertical, valor padrão stretch*/
+	/* flex-start | flex-end | center | baseline */
+	
+	align-content: stretch;
+	/* alinhamento vertical quando houver uma quebra, por valor padrão é o stretch */
+	/* flex-start flex-end center space-between space-around   */
+}
+
+.item {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+	
+	flex-grow: 0;
+	/* ligado a largura dos itens, por padrão 0, se 1 é o mesmo que dizer que todos os itens tem o mesmo tamanho*/
+	
+	flex-shrink: 1;
+	/* capacidade de redução do item */
+	
+	flex-basis: 20px;
+	/* define a largura inicial destes itens */
+	
+	flex: 1 1 300px;
+	/* forma resumida de escrever estas 3 propriedades juntas */
+	/* flex-grow | flex-shrink | flex-basis */
+}
+
+.article-01 { order: 3; flex-grow: 2; /* siginica que estet item vai ocupar 3 vezes mai espaço que os outros itens */}
+.article-02 { order: 1; align-self: auto;} /* alinhamento dos itens */
+.article-03 { order: 2; }
+.article-04 { order: 4; }
+
+

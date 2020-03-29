@@ -17,7 +17,7 @@ img { max-width: 100%;}
 
 /*============CABECALHO============*/
 .cabecalho {
-    width: 100%;
+    width: 100%; /*para ocupar toda a largura da tela*/
     float: left;
     padding: 3% 4%;
 }
@@ -50,11 +50,11 @@ img { max-width: 100%;}
     left: 0;
 }
 .btn-close {
-    font-size: 3em; 
+    font-size: 1.5em; 
     color: #fff;
     float: right;
     cursor: pointer;
-    margin-right: 5%;
+    margin: 2% 3% 0 0;
 }
 
 .menu ul {
@@ -84,4 +84,124 @@ img { max-width: 100%;}
     text-align: center;
     padding: 3% 4%;
     background: url(../img/bg.jpg) no-repeat fixed;
+}
+.title { width: 100%;}
+.title h2 {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 700;
+}
+.title h3 {
+    font-size: 1.5em;
+    color: #fff;
+}
+.buttons { 
+    width: 100%;
+    margin-top: 2%;
+}
+.buttons i { float: right;}
+.btn-cadastrar {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: left;
+    cursor: pointer;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #130400;
+}
+.btn-sobre {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: left;
+    cursor: pointer;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #130400;
+    color: #fff;
+    margin-top: 2%;
+}
+/*============SERVICOS============*/
+.servicos {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+}
+.servico {
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 3%;
+}
+.servico img {
+    border-radius: 7px 7px 0 0; /*para arredondar só a parte superior da imagem*/
+}
+.inner { padding: 7%;}
+.inner a {
+    font-size: 1.5em;
+    color: #130400;
+    font-weight: 700;
+}
+.inner h4 {
+    font-size: 1.2em;
+    color: #130400;
+    margin-top: 2%;
+}
+.inner p {
+    margin-top: 6%;
+    color: #130400; 
+    line-height: 1.5em; /*para aumentar um pouco a altura das linhas*/
+    /*aqui não precisou colocar o font-size por que a ideia é usar o padrão definido pelo navegador que é de 1em*/
+}
+/*============NEWSLETTER============*/
+.newsletter {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+    background-color: #130400;
+}
+.newsletter h2 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 700;
+}
+.newsletter h3 { color: #fff;}
+.newsletter form { margin-top: 2%;}
+.newsletter input {
+    width: 100%;
+    background-color: #130400;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5%;
+    border-radius: 5px;
+}
+.newsletter button {
+    width: 100%;
+    background-color: #fff;
+    color: #130400;
+    padding: 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+/*============FOOTER============*/
+.rodape {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+    background: linear-gradient(to right, #ce2e3c, #da6709 );
+}
+.social-icons a {
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 3%; /*para que os links não fiquem colados*/
+}
+.social-icons a:last-child { margin-right: 0; } /*tira a margem do último ícone pra evitar algum erro de alinhamento posterior*/
+.social-icons a:hover { color: rgb(255, 255, 255); } /*tira a transparência e mostra o branco normal*/
+.copyright {
+    margin-top: 2%;
+    color: rgba(255, 255, 255, 0.7);
 }

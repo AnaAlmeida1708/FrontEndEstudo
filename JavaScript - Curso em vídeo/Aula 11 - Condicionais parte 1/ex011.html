@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica nacionalidade</title>
+    <style>
+        body {
+            font: normal 16pt Arial;
+        }
+        input{
+            font: normal 16pt Arial;
+        }
+        div#resposta{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Identifica nacionalidade</h1>
+    Insira seu país <input type="text" name="tx" id="tx">
+    <input type="button" value="verificar" onclick="verf()">
+    <div id="resposta"></div>
+
+    <script>
+        function verf(){
+            var tx = window.document.getElementById('tx').value
+            var res = window.document.getElementById('resposta')
+            res.innerHTML = `Vivendo em ${tx} `
+            if(tx =='Brasil'){
+                res.innerHTML += 'você é brasileiro!'
+            } else {
+                res.innerHTML += 'você é estrangeiro!'
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -44,7 +44,7 @@ form {
 	margin: 40px 0;
 }
 
-form label, form p {
+form label, form legend {
 	display: block; /*faz com o que este elemento ocupe 100% da linha em questão com o block, pois por padrão o label e o input são display inline*/
 	font-size: 20px;
 	margin: 0 0 10px;
@@ -58,6 +58,25 @@ form label, form p {
 }
 .checkbox {
 	margin: 20px 0;
+}
+
+#enviar {
+	width: 40%;
+	padding: 15px 0;
+	font-size: 18px;
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;/*faz uma transição visual de um elemento, pode ser usado de várias formas*/
+	cursor: pointer;
+}
+
+#enviar:hover {
+	background-color: darkorange;
+	transform: scale(1.2);/*Aumenta um elemento proporcionalmente, nesse caso em 20%*/
+	/*transform: rotate(70deg); rotaciona o elemento em  70graus*/
 }
 
 /*FOOTER*/

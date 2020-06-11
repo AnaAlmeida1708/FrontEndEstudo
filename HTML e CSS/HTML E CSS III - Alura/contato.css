@@ -79,6 +79,23 @@ form label, form legend {
 	/*transform: rotate(70deg); rotaciona o elemento em  70graus*/
 }
 
+table {
+	margin: 20px 0 40px;
+	width: 40%;
+	text-align: center;
+}
+
+thead {
+	background-color: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 15px 8px;
+}
+
 /*FOOTER*/
 footer {
 	text-align: center;
@@ -91,3 +108,16 @@ footer {
 	font-size: 13px;
 	margin: 20px 0 0;
 }
+
+/*
+Tabela HTML:
+A tag table, que representa a tabela
+A tag tr, que representa a linha da tabela
+A tag td, que representa a célula da tabela
+A tag thead, que representa o cabeçalho da tabela
+A tag tbody, que representa o corpo da tabela
+A tag th, que representa a célula do cabeçalho da tabela
+A tag tfoot, que representa o rodapé da tabela
+Mesclar células: colspan=X, onde X é o número de células que você quer agrupar
+*/
+

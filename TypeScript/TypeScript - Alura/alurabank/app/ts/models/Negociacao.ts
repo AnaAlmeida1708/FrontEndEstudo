@@ -1,12 +1,16 @@
 class Negociacao {
-    private _data;
-    private _quantidade;
-    private _valor;
-    
-    constructor (data, quantidade, valor){
+    /*Estes parâmetros comentados já são declarados implicitamente no construtor
+    private _data: Date;
+    private _quantidade: number;
+    private _valor: number;
+    */
+
+    constructor (private _data: Date, private _quantidade: number, private _valor: number){
+        /*
         this._data = data;
         this._quantidade = quantidade;
         this._valor = valor;
+        */
     }
 
     get data(){

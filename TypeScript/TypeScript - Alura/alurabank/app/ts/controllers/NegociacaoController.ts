@@ -5,6 +5,7 @@ class NegociacaoController {
 
     private _negociacoes = new Negociacoes();
     private _negociacoesView = new NegociacoesView('#negociacoesView');
+    private _mensagemView = new MensagemView('#mensagemView')
 
     constructor(){
         this._inputData = <HTMLInputElement> document.querySelector('#data');//Casting de um tipo mais genérico para um mais específico
@@ -24,6 +25,7 @@ class NegociacaoController {
         );
         this._negociacoes.adiciona(negociacao);
         this._negociacoesView.update(this._negociacoes);
+        this._mensagemView.update('Negociação adicionada com sucesso!');
     }
 
 }

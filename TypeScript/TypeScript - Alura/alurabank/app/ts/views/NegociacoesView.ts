@@ -1,15 +1,4 @@
-class NegociacoesView {
-
-    private _elemento: Element;
-
-    constructor(seletor: string){
-        this._elemento = document.querySelector(seletor);
-    }
-
-    //aqui eu exibo para o usuário o que foi definido no template, através do innerHTML
-    update(model: Negociacoes): void {
-        this._elemento.innerHTML = this.template(model);
-    }
+class NegociacoesView extends View <Negociacoes> {
 
     //aqui é definido o que eu quero exibir para o usuário
     template(model: Negociacoes): string {

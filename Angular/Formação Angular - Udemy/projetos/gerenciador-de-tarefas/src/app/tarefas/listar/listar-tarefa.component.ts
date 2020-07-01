@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TarefaService, Tarefa } from '../shared';
-//import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-listar-tarefa',
@@ -21,5 +21,5 @@ export class ListarTarefaComponent implements OnInit {
     return this.tarefaService.listarTodos();
   }
 
-  
+
 }

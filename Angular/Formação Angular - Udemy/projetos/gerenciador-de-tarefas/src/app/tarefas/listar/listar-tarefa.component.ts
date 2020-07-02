@@ -21,5 +21,12 @@ export class ListarTarefaComponent implements OnInit {
     return this.tarefaService.listarTodos();
   }
 
+  remover($event: any, tarefa: Tarefa): void {
+    $event.preventDefault();//para desabilitar o carregamento automático da página
+    if(confirm('Deseja remover a tarefa "' + tarefa.nome + '"?')){//método do próprio navegador que gera um alerta de confirmação
+      this.tarefaService.remover(tarefa.id);
+      this.tarefas = this.listarTodos();
+    }
+  }
 
 }

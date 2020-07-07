@@ -1,5 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
 
+import { DataBrPipe } from '../pipes';
+import { ConversorService } from '../services';
 import { ModalCotacaoComponent } from './modal-cotacao.component';
 
 describe('ModalCotacaoComponent', () => {
@@ -8,7 +11,16 @@ describe('ModalCotacaoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ModalCotacaoComponent ]
+      declarations: [ 
+        ModalCotacaoComponent,
+        DataBrPipe
+      ],
+      providers: [
+        ConversorService
+      ],
+      imports: [
+        HttpClientModule
+      ]
     })
     .compileComponents();
   }));
@@ -19,7 +31,4 @@ describe('ModalCotacaoComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

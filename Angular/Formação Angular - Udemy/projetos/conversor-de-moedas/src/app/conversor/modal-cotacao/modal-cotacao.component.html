@@ -15,7 +15,7 @@
         	<span aria-hidden="true">&times;</span>
         </button>
         <h4 class="modal-title" id="modalLabel">
-        	Cotação em {{ dataCotacao }}
+        	Cotação em {{ dataCotacao | dataBr }}<!--Essa concatenação com o pipe faz com que antes de aparecer na tela ele faça a conversão-->
         </h4>
       </div>
       <div class="modal-body text-center">

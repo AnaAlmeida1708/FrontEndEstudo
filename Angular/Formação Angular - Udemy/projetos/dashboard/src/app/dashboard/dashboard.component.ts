@@ -123,8 +123,6 @@ export class DashboardComponent implements OnInit {
     chart.draw(this.obterDataTable(), opcoes);
   }
 
-
-
   /**
    * Cria e retorna o objeto DataTable da API de gráficos, responsável por definir os dados do gráfico
    */
